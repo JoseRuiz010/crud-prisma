@@ -43,7 +43,7 @@ const NewPage = ({ params: { id } }) => {
             icon: "success"
           }).then(async (result) => {
             router.push("/")
-            router.refresh()
+            // router.refresh()
           })
         }
       }
@@ -64,7 +64,7 @@ const NewPage = ({ params: { id } }) => {
       })
       const data = await res.json()
       router.push("/")
-      router.refresh()
+      // router.refresh()
       console.log(data)
     } else {
       const res = await fetch('/api/tasks', {
@@ -76,7 +76,7 @@ const NewPage = ({ params: { id } }) => {
       })
       const data = await res.json()
       router.push("/")
-      router.refresh()
+      // router.refresh()
       console.log(data)
     }
 
