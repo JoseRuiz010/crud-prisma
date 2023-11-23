@@ -11,12 +11,12 @@ async function loadTasks() {
 }
 
 const HomaPage = async () => {
-  const tasks = await loadTasks();
+  // const tasks = await loadTasks();
   return (
     <div className='grid grid-cols-4'>
-      {
+      {/* {
         tasks.map((t, i) => <TaskCard task={t} key={t.id + i} />)
-      }
+      } */}
     </div>
   )
 }
