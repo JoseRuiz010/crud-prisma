@@ -4,7 +4,7 @@ import React from 'react'
 
 
 async function loadTasks() {
-  const res = await fetch('http://localhost:3000/api/tasks', { cache: 'no-cache' })
+  const res = await fetch('http://127.0.0.1:3000/api/tasks', { cache: 'no-cache' })
   const data = await res.json();
   // console.log(data)
   return data
