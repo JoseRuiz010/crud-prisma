@@ -15,7 +15,7 @@ const HomaPage = async () => {
   return (
     <div className='grid grid-cols-4'>
       {
-        tasks.map(t => <TaskCard task={t} />)
+        tasks.map(t => <TaskCard task={t} key={t.id + t.title} />)
       }
     </div>
   )
